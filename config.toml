@@ -1,28 +1,66 @@
-base_url = "https://JJJ-ade.github.io/"
+# The URL the site will be built for
+base_url = "https://jjj-ade.github.io/"
 title = "JJJade"
-theme = "goyo"
+description = ""
 
-compile_sass = false
-build_search_index = false
+build_search_index = true
+default_language = "en"
+generate_feeds = true
+generate_sitemap = true
 
 [markdown]
-highlight_code = false
+highlight_code = true
+bottom_footnotes = true
+highlight_theme = "ayu-mirage"
+
+[languages.ko]
+generate_feeds = true
+build_search_index = true
 
 [extra]
-# Logo Configuration (적당히 바꿔도 됨)
-logo_text = "JJJade Log"
+logo_text = "Goyo"
 logo_image_path = "images/goyo.png"
-logo_image_padding = "5px"
+footer_html = "<div style='display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap;'><a href='https://www.hahwul.com' target='_blank' rel='noopener noreferrer' style='display: inline-flex; align-items: center;'><img src='https://www.hahwul.com/images/logo.png' alt='HAHWUL' style='height: 30px' /></a><span style='opacity: 0.6;'>•</span><span>Powered by <a href='https://www.getzola.org' class='font-medium text-base-content/70 hover:text-base-content transition-colors duration-200'>Zola</a> and <a href='https://github.com/hahwul/goyo' class='font-medium text-base-content/70 hover:text-base-content transition-colors duration-200'>Goyo</a></span></div>"
+default_thumbnail = "images/default_thumbnail.jpg"
+twitter_site = "@hahwul"
+twitter_creator = "@hahwul"
+default_colorset = "light" # Options: "dark", "light"
+brightness = "normal"  # Options: "darker", "normal", "lighter"
+gtag = ""
+sidebar_expand_depth = 1
+disable_root_sidebar_hide = false
 
-# Footer Configuration
-footer_html = "Powered by <a href='https://www.getzola.org'>Zola</a> and <a href='https://github.com/hahwul/goyo'>Goyo</a>"
+# Font Configuration
+custom_font_enabled = false  # Set to true to use custom font
+custom_font_name = ""  # Name of the custom font (e.g., "Roboto", "Noto Sans KR")
+custom_font_path = ""  # Local path (e.g., "fonts/custom.woff") or remote URL (e.g., "https://fonts.googleapis.com/css2?family=Roboto")
 
-# Navigation Configuration (상단 메뉴)
+# Language display names for the language selector
+# If not defined, the language code will be displayed
+lang_aliases = { en = "English", ko = "한국어" }
+
 nav = [
-  { name = "Docs", url = "/introduction", type = "url", icon = "fa-solid fa-book" },
-  { name = "GitHub", url = "https://github.com/JJJ-ade/JJJadelog", type = "url", icon = "fa-brands fa-github" },
+    { name = "Documents", url = "/introduction", type = "url", icon = "fa-solid fa-book" },
+    { name = "GitHub", url = "https://github.com/hahwul/goyo", type = "url", icon = "fa-brands fa-github" },
+    { name = "Links", type = "dropdown", icon = "fa-solid fa-link", members = [
+        { name = "Creator Blog", url = "https://www.hahwul.com", type = "url", icon = "fa-solid fa-fire-flame-curved" },
+        { name = "Zola Offical", url = "https://getzola.org", type = "url", icon = "fa-solid fa-z" },
+    ] },
 ]
 
-landing = [
-    { title = "Hello World", link = "hello_world", desc = "첫 포스트입니다." },
+nav_ko = [
+    { name = "문서", url = "/ko/introduction", type = "url", icon = "fa-solid fa-book" },
+    { name = "GitHub", url = "https://github.com/hahwul/goyo", type = "url", icon = "fa-brands fa-github" },
+    { name = "링크", type = "dropdown", icon = "fa-solid fa-link", members = [
+        { name = "제작자 블로그", url = "https://www.hahwul.com", type = "url", icon = "fa-solid fa-fire-flame-curved" },
+        { name = "Zola 공식", url = "https://getzola.org", type = "url", icon = "fa-solid fa-z" },
+    ] },
 ]
+
+# Edit this page Configuration
+edit_url = "https://github.com/hahwul/goyo/edit/main"
+
+# Share buttons Configuration
+# Set to true to enable individual share buttons
+enable_copy_url = false
+enable_share_x = false
