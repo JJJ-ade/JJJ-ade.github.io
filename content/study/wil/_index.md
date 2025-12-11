@@ -1,7 +1,5 @@
 +++
 title = "01. WIL"
-sort_by = "date"
-template = "section.html"
-paginate_by = 10
+sort_by = "weight"
 weight = 1
 +++

@@ -1,7 +1,0 @@
-+++
-title = "Diary"
-sort_by = "date"
-template = "section.html"
-+++
-
-일기 모음입니다 📝
