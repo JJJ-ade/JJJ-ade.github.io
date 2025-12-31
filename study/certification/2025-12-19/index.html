@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ko" style="background-color: #ffffff;">
+
+<head>
+    
+        
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Resource Hints for better performance -->
+    
+
+    <!-- Initialize theme and brightness before CSS loads to prevent FOUC -->
+    <script>
+        (function() {
+            // Theme mapping - maps user-friendly names to actual DaisyUI theme names
+            var themeMapping = { "goyo-dark": "night", "goyo-light": "lofi" };
+            
+            // Get default values from config
+            var defaultColorset = "light";
+            var defaultBrightness = "normal";
+            var themeMap = { "dark": "goyo-dark", "light": "goyo-light" };
+            var fallbackTheme = themeMap[defaultColorset] || "goyo-dark";
+            
+            // Get theme from localStorage or use fallback
+            var currentUserTheme = localStorage.getItem('theme') || fallbackTheme;
+            var actualTheme = themeMapping[currentUserTheme] || currentUserTheme;
+            
+            // Set theme and brightness attributes immediately
+            document.documentElement.setAttribute("data-theme", actualTheme);
+            document.documentElement.setAttribute("data-brightness", defaultBrightness);
+        })();
+    </script>
+
+    <style>
+        
+            
+            @font-face {
+                font-family: "Pretendard-Regular";
+                src: url('https://jjj-ade.github.io/fonts/Pretendard-Regular.woff') format("woff");
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+            }
+            body {
+                font-family: "Pretendard-Regular", sans-serif;
+            }
+        
+    </style>
+
+    
+        
+            <meta name="description" content="2025년 4차 정보보안 실기 합격 수기" />
+        
+    
+
+    <title>정보보안기사 | JJJade Log</title>
+
+    
+    
+
+      <!-- SEO: Open Graph / Twitter Card -->
+      <meta property="og:title" content="정보보안기사 | JJJade Log" />
+      <meta property="og:description" content="2025년 4차 정보보안 실기 합격 수기" />
+      <meta property="og:url" content="https://jjj-ade.github.io/" />
+      <meta property="og:type" content="website" />
+      
+      <meta property="og:image" content="https://jjj-ade.github.io/images/tomato.png" />
+      
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="정보보안기사" />
+      <meta name="twitter:description" content="2025년 4차 정보보안 실기 합격 수기" />
+      
+      
+      
+      <meta name="twitter:image" content="https://jjj-ade.github.io/images/tomato.png" />
+      
+
+      <!-- Browser address bar color -->
+      <meta name="theme-color" content="#ffffff">
+
+      <!-- CSS -->
+    <link rel="stylesheet" href="https://jjj-ade.github.io/css/main.css">
+    <link rel="stylesheet" href="https://jjj-ade.github.io/css/font-awesome.min.css">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://jjj-ade.github.io/fonts/Pretendard-Regular.woff" as="font" type="font/woff" crossorigin>
+
+    <!-- Defer non-critical scripts -->
+    <script defer src="https://jjj-ade.github.io/js/copy_code.js"></script>
+    <script defer src="https://jjj-ade.github.io/js/copy_heading_link.js"></script>
+    
+    <!-- Lazy load Mermaid and KaTeX - only when needed -->
+    <script>
+        // Lazy load KaTeX and Mermaid when needed
+        window.addEventListener('DOMContentLoaded', function() {
+            // Check for both KaTeX inline and block elements in one pass
+            var katexInlineElements = document.querySelectorAll('.katex-inline');
+            var katexBlockElements = document.querySelectorAll('.katex-block');
+            var hasKatex = katexInlineElements.length > 0 || katexBlockElements.length > 0;
+            var hasMermaid = document.querySelector('.mermaid');
+            
+            // Load KaTeX if math elements are present
+            if (hasKatex) {
+                // Load KaTeX CSS first
+                var katexCSS = document.createElement('link');
+                katexCSS.rel = 'stylesheet';
+                katexCSS.href = 'https://jjj-ade.github.io/css/katex.min.css';
+                document.head.appendChild(katexCSS);
+                
+                // Load KaTeX JS
+                var katexScript = document.createElement('script');
+                katexScript.src = 'https://jjj-ade.github.io/js/katex.min.js';
+                katexScript.onload = function() {
+                    // Render inline elements
+                    katexInlineElements.forEach(function(elem) {
+                        var texContent = elem.textContent || elem.innerText;
+                        try {
+                            katex.render(texContent, elem, { 
+                                throwOnError: false,
+                                displayMode: false
+                            });
+                        } catch(e) {
+                            console.error('KaTeX render error:', e);
+                        }
+                    });
+                    
+                    // Render block elements
+                    katexBlockElements.forEach(function(elem) {
+                        var texContent = elem.textContent || elem.innerText;
+                        try {
+                            katex.render(texContent, elem, { 
+                                throwOnError: false,
+                                displayMode: true
+                            });
+                        } catch(e) {
+                            console.error('KaTeX render error:', e);
+                        }
+                    });
+                };
+                document.head.appendChild(katexScript);
+            }
+            
+            // Load Mermaid if diagram elements are present
+            if (hasMermaid) {
+                var mermaidScript = document.createElement('script');
+                mermaidScript.src = 'https://jjj-ade.github.io/js/mermaid.min.js';
+                mermaidScript.onload = function() {
+                    // Initialize Mermaid after loading
+                    if (typeof window.initMermaid === 'function') {
+                        window.initMermaid();
+                    }
+                };
+                document.head.appendChild(mermaidScript);
+            }
+        });
+    </script>
+
+    
+    
+</head>
+<body>
+    
+
+<!-- Search Modal -->
+<input type="checkbox" id="search-modal" class="modal-toggle" />
+<div class="modal modal-middle">
+    <div class="modal-box relative max-w-2xl p-0 bg-base-100 shadow-2xl">
+        <label for="search-modal" class="btn btn-sm btn-circle btn-ghost absolute right-4 top-4 z-10">✕</label>
+        <div class="search-container">
+            <!-- Search Input Container -->
+            <div class="search-input-container px-6 pt-6 pb-4 border-b border-base-300/30">
+                <div class="relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="search-icon absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-base-content/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <input id="search" type="search" placeholder="Search documentation..." class="search-input w-full pl-12 pr-4 py-3 text-base bg-transparent border-0 focus:outline-none focus:ring-0 text-base-content placeholder:text-base-content/40">
+                </div>
+            </div>
+            <!-- Search Results Container -->
+            <div class="search-results-container px-2 py-2 h-96 overflow-y-auto">
+                <div class="search-results__header px-4 py-2 text-xs text-base-content/60"></div>
+                <ul class="search-results__items space-y-1"></ul>
+            </div>
+            <!-- Search Footer -->
+            <div class="search-footer px-6 py-3 border-t border-base-300/30 flex items-center justify-end gap-4 text-xs text-base-content/50">
+                <div class="flex items-center gap-1">
+                    <kbd class="kbd kbd-xs">↑</kbd>
+                    <kbd class="kbd kbd-xs">↓</kbd>
+                    <span>to navigate</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <kbd class="kbd kbd-xs">↵</kbd>
+                    <span>to select</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <kbd class="kbd kbd-xs">esc</kbd>
+                    <span>to close</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="drawer lg:drawer-open">
+        <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col pt-16">
+            
+<div class="navbar opacity-95 fixed top-0 left-0 right-0 z-50 h-16 border-b border-gray-500/15 backdrop-blur-3xl">
+    <!-- Mobile hamburger -->
+    <div class="flex-none lg:hidden">
+        <label for="my-drawer-2" class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </label>
+    </div>
+    <!-- Logo -->
+    <div class="flex-1">
+        <a href="/" class="btn btn-ghost hover:animate-pulse hover:bg-transparent hover:border-transparent normal-case text-xl" style="background: linear-gradient(135deg, #9ca3af, #6b7280); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: bold; font-size: 1.5rem;">
+            
+                <img src="https://jjj-ade.github.io/images/tomato.png" alt="JADE LOG" class="h-18 w-auto" />
+            
+        </a>
+    </div>
+    <!-- Desktop Menu -->
+    <div class="flex-none hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 items-center">
+            
+            
+            
+                
+                    
+                        <li class="dropdown dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-ghost">
+                                <i class="fa-solid fa-star"></i>
+                                Categories
+                                <svg class="inline w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </div>
+                            <ul tabindex="0" class="dropdown-content menu bg-base-100 border border-gray-500/15 rounded-box z-1 p-2 shadow-sm">
+                                
+                                    <li>
+                                        <a class="btn btn-ghost hover:no-underline" href="/study/wil">
+                                            <i class="fa-solid fa-book"></i>
+                                            WIL
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li class="dropdown dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-ghost">
+                                <i class="fa-solid fa-paperclip"></i>
+                                Link
+                                <svg class="inline w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </div>
+                            <ul tabindex="0" class="dropdown-content menu bg-base-100 border border-gray-500/15 rounded-box z-1 p-2 shadow-sm">
+                                
+                                    <li>
+                                        <a class="btn btn-ghost hover:no-underline" href="https://github.com/JJJ-ade" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-github"></i>
+                                            Github
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="btn btn-ghost hover:no-underline" href="https://www.linkedin.com/in/chae-lim-kim-80ba9039b" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                            LinkedIn
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                    
+                
+            
+            
+
+            
+
+        </ul>
+    </div>
+</div>
+
+
+            
+            
+            <div class="p-8 w-full flex justify-center">
+                <div class="w-full max-w-7xl lg:grid lg:grid-cols-[1fr_250px] lg:gap-8">
+                    <main class="prose w-full">
+                        
+    <div class="mb-12 pb-4 border-b border-gray-500/15">
+        <h1 class="flex items-center gap-3">
+            정보보안기사
+            
+        </h1>
+        <p class="text-gray-500">2025년 4차 정보보안 실기 합격 수기</p>
+    </div>
+    <h2 id="deuleogagi-apseo">들어가기 앞서</h2>
+<p>저는 한달만에 딴다거나, 전략을 세웠다거나, 어느 부분을 중점적으로 봤다거나 하는 것은 없었습니다. 엄청나게 성실한 성격도 아니고(운동을 하겠다는 다짐을 세우면 한 달에 하루 정도 나갑니다.) 평소에 하고 싶은게 워낙 많아 이것 조금, 저것 조금으로 하루를 채우는 성격 입니다.(독서도 병렬독서를 즐깁니다.) 인터넷 강의 같은 건 듣지 않고(그래서 좀 더 취득이 늦었을 수도요) 알기사 실기책을 통해 3번의 시험 접수를 통해 끝내 합격했습니다.</p>
+<h2 id="gyojae">교재</h2>
+<h3 id="nyeondo-suga-jungyohanga">년도 수가 중요한가?</h3>
+<p>지금 와서 돌이켜보면 정말 후회하는 일은, 2025년도 교재를 사지 않았던 것입니다. 저는 주기적으로 '정보보안기사 병'이 오는 사람이라 2023년, 2024년도 교재를 이미 가지고 있었습니다. 2023년도와 2024년도의 교재가 내용 차이가 적었기에 당연히 그대로 공부해도 될 것이라 생각했고 2025년도 1차 시험에 임했습니다. 1차 시험을 보니 문제 유형이 조금 다르다는 생각에 2025년도 교재를 구매했고 저는 진작 사지 않은 것을 후회했습니다.</p>
+<p>완전히 다른 교재가 있었습니다.. 정리도 훨씬 더 잘 되었고 이곳 저곳 가독성을 위해 손을 댔다는 느낌이 확실히 있습니다. 얼추 2022년~2024년 교재를 다 본적이 있는데(2024년도 교재 제외 공부한게 아니고 정말 Just see 했습니다) 2025년도 교재는 1회독이 정말 편했습니다.</p>
+<p>사실 정보보안기사를 보시는 분들중 대부분이 알기사 책으로 공부하실 것 같은데 이게 1회독이 편한 책은 아닙니다.. (당사자성 발언) 만약 공부를 하신다면 문제집 리뉴얼도 매 해마다 되는것이 아니니 가지고 계신 책과 서점에 새로 나온 책을 비교 후 결정하시길 바랍니다. 예전에 좋은 경험 쌓기로 시험을 보러 갔던 적이 있는데 그때나 지금이나 년도에 민감한 문제들(예를들어 25년에 개정된 법관련 내용이라던가)은 본적이 없는 것 같습니다. 그렇기 때문에 교재의 년도수는 리뉴얼 된다면 중요하다. 입니다.</p>
+<h2 id="un">운</h2>
+<p>저는 운기칠삼이라는 말을 정말 많이 믿습니다. 사실 운기칠삼에서 더 나아가 9할이 운 인것 같다는 것을 매번 느끼고 있습니다. 그렇기에 떨어져도 타격이 비교적 적습니다. 노력을 안 한건 아니니 나에게 잘 맞는 운이 다가온다면 붙을 걸 알았으니까요.(3트 후에도 못 붙으면 사실 한 번은 더 볼 생각이었습니다.) 모든 시험이 다 그렇듯 시험의 난이도는 매번 다릅니다. 이번 시험은 공부도 하긴 했지만 운이 좋아서 붙었다는 느낌을 지울 수가 없는 시험이었습니다.</p>
+<ol>
+<li>이전 시험에서 나온 &lt;보안 관제의 3요소를 적으시오&gt; 나 외벽의 CCTV 설치와 관련된 개인정보 보호 요소 같은 '교과서식 문제가 아닌 문제' 가 없었다.</li>
+<li>이 분야는 나올때 쯤 됐다. 혹은 이번 년도에서 좀 중요해 보인다 싶었던 분야의 문제가 그대로 나왔다.</li>
+<li>마지막 16점 짜리 문제가 너무 쉬웠다. (마침 직전에 SQL 공부를 했었었음)</li>
+</ol>
+<p>이 모두가 들어 맞아 합격할 수 있었던 것 같습니다. 특히 1번은 저에게 아주 중요했는데 왜냐하면 누군가에게 가르침을 받는 형태(강의)가 아닌 오직 책만을 통해서 공부를 해야 했기 때문입니다. 진짜 보안 관제 3요소는 다시 봐도 어떤 답을 원했는지 잘 모르겠습니다;</p>
+<h2 id="gongburyang">공부량</h2>
+<p>솔직히 밀도있는 공부를 한 것은 아니고 하루 전에 12시간동안 1회독+기출1회독 약 1400페이지를 머리에 바르고 갔습니다. 왜냐하면 1차때 1회독 + 20% 분량을 정리했고 2차때 다시 1회독 하면서 70% 분량을 정리했기 때문입니다. 그렇게 예전에 발라둔 기억은 대다수 휘발되었지만 익숙한 내용을 다시 바르게 되면 기억이 튀어나올 수 있을 것 같아서 이런 선택을 했습니다. 직장 병행에 중간 중간 일들이 있었기에 1,2,4차 모두 시험 한달전부터 공부를 했던 것 같습니다. 몇달 전부터 공부하겠다는게 다짐은 쉬워도 행동이 잘 안 따라 주었습니다.</p>
+<h2 id="geuraeseo-igeo-ddayahana">그래서 이거 따야하나?</h2>
+<p>난이도로 생각한다면 누군가한테는 한 달 빡세게 버닝하면 합격할 수 있는 시험이고, 누군가한테는 정말 어려운 시험일 것입니다. (저는 그걸 약 1년간 질질 끌어왔었습니다.) 제가 보안기사 홈페이지를 들어가기 위해 검색을 하다보면 많은 커뮤니티에서 재밌는 글을 보게 되는데 합격자가 10% 미만 시절에도 해당 자격증을 무시하는 글들은 있었습니다. 그냥 취업이든, 시험이든, 대학이든 내가 힘들게 들어간거면 그만큼 가치가 높아 보이고 요행으로 들어가게 된다면 그만큼 가치가 낮게 보입니다. (저는 너무 지겹고 힘들었기 때문에 제안에서의 가치는 짱짱맨입니다.)</p>
+<p>보안에서 일하고 싶다고 생각하면 엄청 따야하는 자격증은 아니지만 (왜냐하면 정보보안 하지만 안따는 사람 3억명) 그렇다고 따는게 으휴 쯧쯧 시간낭비 취급을 받진 않는 정도 입니다. 공고를 보더라도 우대 사항으로 쳐주며, 공기업을 가도 전산 보안 분야에서 가산점을 주는 자격증이니까요. 그냥 따면 좋다 입니다.</p>
+<p>사실 저는 비전공자에 정보보안을 하겠다고 온터라 이게 꼭 필요했지만요,, 왜 그렇게 필요했던 자격증을 이제와서야 땄냐고는 묻지 마세요...</p>
+<h2 id="coejong-jeongri">최종 정리</h2>
+<ol>
+<li>교재는 많이들 쓰는게 짱인데 알기사로 했다. 근데 갑자기 리뉴얼 되면서 교재 질이 좋아지는 경우도 있으니 그 해 1트에 끝내는 것이 아니라면 서점가서 새로운 년도 교재를 확인할 것</li>
+<li>공부 할만큼 한 것 같은데 떨어졌으면 포기하지 말고 다음 차수 시험을 보러라도 가보기. 운이 안 좋거나 나랑 안 맞는 유형이 다수 출제 됐을 수도 있다.</li>
+<li>만약 준비 기간이 짧다면 알기사 교재라는 가정 하에 기본서 700페이지 읽을 시간에 기출 문제 읽으면서 문제 내 개념 빠르게 머리에 넣고 기출 회독만 돌리기 (근데 사전 지식이 없다면 기본서 꼬옥 읽으세요.. 운 파트에 1번과 같은 응용 문제 기본서 보면 대충 이거겠구나 하는게 있긴 합니다.)</li>
+<li>그리고 이제 합격은 문자로 안 온다. 알림톡으로 옴(시간 맞춰 합격 확인 하러 갈 필요 없음)
+<img src="/images/study/certificate/IMG_8738.jpg" alt="" /></li>
+</ol>
+
+
+    
+
+
+                        
+
+    <div id="comments" class="mt-12">
+        
+            <script src="https://giscus.app/client.js"
+                data-repo="JJJ-ade&#x2F;JJJ-ade.github.io"
+                data-repo-id="R_kgDOQlRS7g"
+                data-category="Announcements"
+                data-category-id="DIC_kwDOQlRS7s4CzqPs"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="bottom"
+                data-theme="noborder_light"
+                data-lang="ko"
+                crossorigin="anonymous"
+                async>
+            </script>
+        
+    </div>
+
+
+
+                        <nav class="mt-12 pt-8 border-t border-gray-500/15">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="prev-nav-item">
+                                    <!--
+    
+        
+        <a class="nav-button nav-button-prev group" href="https://jjj-ade.github.io/study/certification/">
+            <div class="nav-button-content">
+                <div class="nav-button-direction">
+                    <svg class="w-5 h-5 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                    <span class="nav-button-label">Back to</span>
+                </div>
+                <div class="nav-button-title">03. 자격증</div>
+            </div>
+        </a>
+    
+-->
+                                </div>
+                                <div class="next-nav-item">
+                                    <!--
+    
+        
+        
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+    
+-->
+                                </div>
+                            </div>
+                        </nav>
+                    </main>
+
+                    
+                        
+
+<div class="hidden lg:block" >
+    <div class="sticky top-20 px-4 py-2 border-l border-gray-500/15">
+        <h4 class="text-lg font-bold mb-1">ON THIS PAGE</h4>
+            <ul class="menu menu-sm toc-menu">
+            
+                <li>
+                    
+                    <a href="https://jjj-ade.github.io/study/certification/2025-12-19/#deuleogagi-apseo" class="toc-link">들어가기 앞서</a>
+                    
+                </li>
+            
+                <li>
+                    
+                    <details class="toc-details" >
+                        <summary>
+                            <a href="https://jjj-ade.github.io/study/certification/2025-12-19/#gyojae" class="toc-link">교재</a>
+                        </summary>
+                        <ul>
+                            
+                                <li>
+                                    <a href="https://jjj-ade.github.io/study/certification/2025-12-19/#nyeondo-suga-jungyohanga" class="toc-link">년도 수가 중요한가?</a>
+                                </li>
+                            
+                        </ul>
+                    </details>
+                    
+                </li>
+            
+                <li>
+                    
+                    <a href="https://jjj-ade.github.io/study/certification/2025-12-19/#un" class="toc-link">운</a>
+                    
+                </li>
+            
+                <li>
+                    
+                    <a href="https://jjj-ade.github.io/study/certification/2025-12-19/#gongburyang" class="toc-link">공부량</a>
+                    
+                </li>
+            
+                <li>
+                    
+                    <a href="https://jjj-ade.github.io/study/certification/2025-12-19/#geuraeseo-igeo-ddayahana" class="toc-link">그래서 이거 따야하나?</a>
+                    
+                </li>
+            
+                <li>
+                    
+                    <a href="https://jjj-ade.github.io/study/certification/2025-12-19/#coejong-jeongri" class="toc-link">최종 정리</a>
+                    
+                </li>
+            
+            </ul>
+    </div>
+</div>
+
+
+                    
+                    
+                </div>
+            </div>
+            
+
+            <script>
+              // Determine theme: localStorage > extra.default_colorset > goyo-dark
+              // Expose theme config for global use (e.g., goyo.js)
+              window.defaultColorset = "light";
+              window.defaultBrightness = "normal";
+              window.themeMap = { "dark": "goyo-dark", "light": "goyo-light" };
+              window.fallbackTheme = window.themeMap[window.defaultColorset] || "goyo-dark";
+
+              // Theme mapping - maps user-friendly names to actual DaisyUI theme names
+              var themeMapping = { "goyo-dark": "night", "goyo-light": "lofi" };
+              var currentUserTheme = localStorage.getItem('theme') || window.fallbackTheme;
+              var actualTheme = themeMapping[currentUserTheme] || currentUserTheme;
+
+              // Initialize and run Mermaid only when loaded
+              window.initMermaid = function() {
+                var mermaidTheme = "dark";
+                if(currentUserTheme == "goyo-light") {
+                  mermaidTheme = "light";
+                }
+                
+                if (typeof mermaid !== 'undefined') {
+                  mermaid.initialize({ startOnLoad: false, theme: mermaidTheme });
+                  
+                  // Function to render mermaid diagrams
+                  var renderMermaid = async function() {
+                    const mermaidElements = document.querySelectorAll('.mermaid');
+                    if (mermaidElements.length > 0) {
+                        await mermaid.run({
+                            nodes: mermaidElements
+                        });
+                    }
+                  };
+                  
+                  // Check if DOMContentLoaded has already fired
+                  if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', renderMermaid);
+                  } else {
+                    // DOMContentLoaded already fired, run immediately
+                    renderMermaid();
+                  }
+                }
+              };
+              
+              // Auto-initialize if Mermaid is already loaded
+              if (typeof mermaid !== 'undefined') {
+                window.initMermaid();
+              }
+            </script>
+
+        </div>
+
+        
+        
+        <div id="sidebar" class="drawer-side pt-16 border-r border-gray-500/15 overflow-hidden">
+        
+            
+                
+
+
+
+    
+
+<label for="my-drawer-2" class="drawer-overlay"></label>
+<div class="mt-4 w-68 h-[calc(100vh-4rem)] bg-base-100 text-base-content flex flex-col overflow-auto thin-scrollbar">
+    
+    <div class="px-2 pt-4 pb-0 flex flex-col items-center gap-2">
+        <div class="w-full flex items-center gap-2">
+            <label for="search-modal" class="input w-full flex items-center justify-between text-left bg-base-100 cursor-pointer border-gray-500/15 hover:border-gray-500/55 hover:border-1 transition" aria-label="검색">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <span class="text-gray-400"><kbd class="kbd">⌘</kbd><kbd class="kbd">K</kbd></span>
+            </label>
+        </div>
+    </div>
+    
+    <ul class="menu w-full flex-grow">
+        
+        
+        
+        
+            
+            <li>
+                <a  href="https://jjj-ade.github.io/home">HOME</a>
+            </li>
+        
+            
+            <li>
+                
+                    <details open>
+                        <summary ><a class="hover:no-underline" href="https://jjj-ade.github.io/study">✻ 공부</a></summary>
+                        <ul>
+                            
+                            
+                            
+                                
+                                <li>
+                                    
+                                        <details >
+                                            <summary ><a class="hover:no-underline" href="https://jjj-ade.github.io/study/wil">01. WIL</a></summary>
+                                            <ul>
+                                                
+                                                
+                                                
+                                                    
+                                                    <li>
+                                                        
+                                                            <details >
+                                                                <summary ><a class="hover:no-underline" href="https://jjj-ade.github.io/study/wil/2025">2025</a></summary>
+                                                                <ul>
+                                                                    
+                                                                    
+                                                                        <li ><a class="hover:no-underline" href="https://jjj-ade.github.io/study/wil/2025/2025-12-2">12월 2번째 주</a></li>
+                                                                    
+                                                                    
+                                                                </ul>
+                                                            </details>
+                                                        
+                                                    </li>
+                                                
+                                            </ul>
+                                        </details>
+                                    
+                                </li>
+                            
+                                
+                                <li>
+                                    <a  href="https://jjj-ade.github.io/study/writeup">02. Write Up</a>
+                                </li>
+                            
+                                
+                                <li>
+                                    
+                                        <details open>
+                                            <summary ><a class="hover:no-underline" href="https://jjj-ade.github.io/study/certification">03. 자격증</a></summary>
+                                            <ul>
+                                                
+                                                
+                                                    <li class="rounded bg-gray-500/15"><a class="hover:no-underline" href="https://jjj-ade.github.io/study/certification/2025-12-19">정보보안기사</a></li>
+                                                
+                                                
+                                            </ul>
+                                        </details>
+                                    
+                                </li>
+                            
+                        </ul>
+                    </details>
+                
+            </li>
+        
+            
+            <li>
+                
+                    <details >
+                        <summary ><a class="hover:no-underline" href="https://jjj-ade.github.io/personal">✻ 개인</a></summary>
+                        <ul>
+                            
+                            
+                            
+                                
+                                <li>
+                                    <a  href="https://jjj-ade.github.io/personal/log">01. 일상</a>
+                                </li>
+                            
+                        </ul>
+                    </details>
+                
+            </li>
+        
+    </ul>
+
+    
+<footer class="footer py-2 px-4 mt-2 border-t border-gray-500/50">
+    <div class="w-full">
+        <!-- Main footer content -->
+        <div class="flex flex-col items-center gap-4 mb-4">
+            <!-- Powered by section with better styling -->
+            <div class="text-center">
+                <p class="text-sm text-base-content/60 leading-relaxed">
+                    Powered by <a href='https://www.getzola.org' class='font-medium text-base-content/70 hover:text-base-content transition-colors duration-200'>Zola</a> and <a href='https://github.com/hahwul/goyo' class='font-medium text-base-content/70 hover:text-base-content transition-colors duration-200'>Goyo</a>
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</footer>
+
+</div>
+
+            
+        </div>
+    </div>
+
+    
+        <script type="text/javascript" src="https://jjj-ade.github.io/goyo.js"></script>
+        
+        <!-- Lazy load search functionality -->
+        <script>
+            var searchLoaded = false;
+            var searchLoadCallbacks = [];
+            
+            function loadSearchLibraries(callback) {
+                // If already loaded, execute callback immediately
+                if (searchLoaded && typeof Fuse !== 'undefined' && window.searchIndex) {
+                    if (callback) callback();
+                    return;
+                }
+                
+                // Add callback to queue
+                if (callback) searchLoadCallbacks.push(callback);
+                
+                // If already loading, don't start again
+                if (searchLoaded) return;
+                searchLoaded = true;
+                
+                // Show loading indicator in search input
+                var searchInput = document.getElementById('search');
+                if (searchInput) {
+                    searchInput.placeholder = 'Loading search...';
+                    searchInput.disabled = true;
+                }
+                
+                // Load Fuse.js
+                var fuseScript = document.createElement('script');
+                fuseScript.src = 'https://jjj-ade.github.io/fuse.min.js';
+                
+                // Load search index after Fuse.js
+                fuseScript.onload = function() {
+                    var searchIndexScript = document.createElement('script');
+                    searchIndexScript.src = 'https://jjj-ade.github.io/search_index.ko.js';
+                    searchIndexScript.onload = function() {
+                        // Re-enable search input
+                        if (searchInput) {
+                            searchInput.placeholder = 'Search documentation...';
+                            searchInput.disabled = false;
+                            searchInput.focus();
+                        }
+                        
+                        // Initialize search functionality
+                        if (typeof initSearch === 'function') {
+                            initSearch();
+                        }
+                        
+                        // Execute all queued callbacks
+                        searchLoadCallbacks.forEach(function(cb) { cb(); });
+                        searchLoadCallbacks = [];
+                    };
+                    document.body.appendChild(searchIndexScript);
+                };
+                
+                document.body.appendChild(fuseScript);
+            }
+            
+            // Load search on first interaction with search modal
+            document.addEventListener('DOMContentLoaded', function() {
+                var searchModal = document.getElementById('search-modal');
+                if (searchModal) {
+                    searchModal.addEventListener('change', function() {
+                        if (this.checked) {
+                            loadSearchLibraries();
+                        }
+                    });
+                }
+                
+                // Also load on Ctrl+K / Cmd+K
+                document.addEventListener('keydown', function(e) {
+                    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                        loadSearchLibraries();
+                    }
+                });
+            });
+        </script>
+        
+    
+</body>
+</html>
